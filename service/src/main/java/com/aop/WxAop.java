@@ -19,6 +19,7 @@ public class WxAop {
     @Around("pointCut()")
     public void around(ProceedingJoinPoint pjp) {
         try {
+            //测试
             //获取AOP方法的参数列表
             Object[] args = pjp.getArgs();
             HttpServletRequest request = (HttpServletRequest) args[0];
