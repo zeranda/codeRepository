@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active: dev
+wechat:
+  mp:
+    appId: wxae297eb1ac56d0ff
+    secret: b58b0a5696e2d83db48d093693a620cf
+    token:  111
+    aesKey:
+---
+spring:
+  profiles: dev
+  aop:
+    auto: true
+    proxy-target-class: true
+server:
+  port: 8080
+  context-path:
+
+---
+spring:
+  profiles: pro
+  aop:
+    auto: true
+    proxy-target-class: true
+server:
+  port: 8080
+  context-path:
+
+---
+spring:
+  profiles: sand
+  aop:
+    auto: true
+    proxy-target-class: true
+server:
+  port: 8080
+  context-path:
